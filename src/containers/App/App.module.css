@@ -1,4 +1,9 @@
 .App {
 
 }
-
+.red {
+    color: red;
+}
+.text {
+    text-decoration: underline;
+}
