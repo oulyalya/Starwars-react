@@ -1,12 +1,8 @@
-import cn from 'classnames';
-import styles from './App.module.css';
-import { getResource } from '../../utils/network';
-
-// getResource();
+import PeoplePage from '../PeoplePage';
 
 const App = () => {
   return (
-    <h1>Привет</h1>
+    <PeoplePage />
   )
 }
 

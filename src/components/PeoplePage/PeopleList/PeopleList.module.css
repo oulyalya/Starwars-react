@@ -1,0 +1,27 @@
+.list__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list__item {
+    cursor: pointer;
+    width: 190px;
+    margin: var(--spacing-m);
+    border-radius: var(--redius-s);
+    background-color: var(--color-white);
+}
+
+.list__item_img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--redius-s) var(--redius-s) 0 0;
+}
+
+.list__container a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
