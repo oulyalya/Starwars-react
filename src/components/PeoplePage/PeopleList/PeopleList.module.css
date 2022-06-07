@@ -10,14 +10,14 @@
     cursor: pointer;
     width: 190px;
     margin: var(--spacing-m);
-    border-radius: var(--redius-s);
+    border-radius: var(--radius-s);
     background-color: var(--color-white);
 }
 
 .list__item_img {
     width: 100%;
     height: auto;
-    border-radius: var(--redius-s) var(--redius-s) 0 0;
+    border-radius: var(--radius-s) var(--radius-s) 0 0;
 }
 
 .list__container a {
