@@ -1,3 +1,11 @@
-body {
-    background-color: #10100e;
+.wrapper {
+    max-width: var(--width-max);
+    margin: 0 auto;
+    padding: var(--spacing-l) 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .wrapper {
+        padding: var(--spacing-l) var(--spacing-l);
+    }
 }
