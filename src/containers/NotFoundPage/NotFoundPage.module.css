@@ -1,0 +1,15 @@
+.not_found__img {
+    width: 250px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not_found__text {
+    margin-top: var(--spacing-l);
+    font-size: var(--font-size-subheader);
+    color: var(--color-white);
+    text-align: center;
+    text-shadow: var(--text-shadow-blue);
+}

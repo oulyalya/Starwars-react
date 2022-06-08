@@ -1,5 +1,6 @@
 import HomePage from '@containers/HomePage';
 import PeoplePage from '@containers/PeoplePage';
+import NotFoundPage from '@containers/NotFoundPage';
 
 import ErrorMessage from '@components/ErrorMessage';
 
@@ -13,6 +14,10 @@ const routesConfig = [
         path: '/people',
         exact: true,
         element: <PeoplePage />
+    },
+    {
+        path: '*',
+        element: <NotFoundPage />
     },
     {
         path: '/fail',
