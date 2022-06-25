@@ -9,7 +9,7 @@ import { API_PEOPLE } from '@constants/api';
 import { useQueryParams } from '@hooks/useQueryParams';
 import PeopleNavigation from '@components/PeoplePage/PeopleNavigation';
 
-import styles from './PeoplePage.module.css';
+// import styles from './PeoplePage.module.css';
 
 const PeoplePage = ({setErrorApi}) => {
     const [people, setPeople] = useState(null);
@@ -19,7 +19,6 @@ const PeoplePage = ({setErrorApi}) => {
 
     const query = useQueryParams();
     const queryPage = query.get('page');
-    // console.log(queryPage, prevPage, nextPage)
 
     const getResource = async (url) => {
         const res = await getApiResource(url);
