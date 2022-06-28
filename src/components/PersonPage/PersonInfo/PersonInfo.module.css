@@ -1,0 +1,32 @@
+.wrapper {
+    width: 300px;
+    margin-left: var(--spacing-l);
+    padding: var(--spacing-m);
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: var(--radius-m);
+    color: var(--color-white);
+}
+
+.list__container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list__item {
+    margin-bottom: 7px;
+    padding: var(--spacing-xs);
+}
+
+.list__item_title {
+    text-decoration: underline;
+    text-shadow: var(--text-shadow-blue);
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        margin-top: var(--spacing-m);
+    }
+}

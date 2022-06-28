@@ -1,0 +1,41 @@
+.wrapper {
+    margin-left: var(--spacing-l);
+    padding: var(--spacing-m) 0;
+
+}
+
+.list__container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    color: var(--color-white);
+}
+
+.list__item_episode {
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-s);
+    background-color: var(--color-red);
+}
+
+.list__item_colon {
+    width: 20px;
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+
+.list__item_title {
+    text-shadow: var(--text-shadow-yellow);
+}
+
+@media screen and (max-width: 1020px) {
+    .wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+}
