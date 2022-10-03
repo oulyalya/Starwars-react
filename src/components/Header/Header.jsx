@@ -1,18 +1,20 @@
 // import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Favourite from '@components/Favourite';
+
 import styles from './Header.module.css';
 
 const Header = () => {
     // const [link, setLink] = useState('/people');
 
-	// const handleMouseEnter = () => {
-	// 	setLink('/people/?page=1');
-	// };
+    // const handleMouseEnter = () => {
+    // 	setLink('/people/?page=1');
+    // };
 
-	// const handleMouseLeave = () => {
-	// 	setLink('/people');
-	// };
+    // const handleMouseLeave = () => {
+    // 	setLink('/people');
+    // };
 
     return (
         <>
@@ -26,6 +28,8 @@ const Header = () => {
                         {/* <NavLink to={link} exact="false" onMouseDown={handleMouseEnter} onMouseLeave={handleMouseLeave}>People</NavLink> */}
                     </li>
                 </ul>
+
+                <Favourite />
             </div>
         </>
     )

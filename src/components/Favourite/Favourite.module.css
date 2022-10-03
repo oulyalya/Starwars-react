@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
+
+.counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0 0 1px 0;
+    margin: 0;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 1;
+    color: var(--color-black);
+    font-weight: var(--font-bold);
+    text-decoration: none;
+    box-shadow: var(--box-shadow-white);
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+/*
+ : #fff;
+ --color-black: #000;
+ --color-yellow: #ffff00;
+ --color-blue: #6a83fb;
+ --color-violet: #ae72c2; */

@@ -1,6 +1,7 @@
 import HomePage from '@containers/HomePage';
 import PeoplePage from '@containers/PeoplePage';
 import PersonPage from '@containers/PersonPage';
+import FavouritesPage from '@containers/FavouritesPage/FavouritesPage';
 import NotFoundPage from '@containers/NotFoundPage';
 
 import ErrorMessage from '@components/ErrorMessage';
@@ -18,6 +19,10 @@ const routesConfig = [
     {
         path: '/people/:id',
         element: <PersonPage />
+    },
+    {
+        path: '/favourites',
+        element: <FavouritesPage />
     },
     {
         path: '*',

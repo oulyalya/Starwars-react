@@ -1,5 +1,6 @@
 import React, { useEffect, useState, Suspense } from 'react';
 import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { withErrorApi } from '@hoc-helpers/withErrorApi';
 import PersonInfo from '@components/PersonPage/PersonInfo';
@@ -15,14 +16,23 @@ const PersonFilms = React.lazy(() => import('@components/PersonPage/PersonFilms'
 
 const PersonPage = ({ setErrorApi }) => {
     const id = useParams().id;
+
+    const [personId, setPersonId] = useState(null);
     const [personInfo, setPersonInfo] = useState(null);
     const [personName, setPersonName] = useState(null);
     const [personPhoto, setPersonPhoto] = useState(null);
     const [personFilms, setPersonFilms] = useState(null);
+    const [isFavourite, setFavourite] = useState(false);
+
+    const storeData = useSelector(state => state.favouriteReducer);
 
     useEffect(() => {
         (async () => {
             const res = await getApiResource(`${API_PERSON}/${id}/`);
+
+            storeData[id] ? setFavourite(true) : setFavourite(false);
+
+            setPersonId(id);
 
             if (res) {
                 setPersonInfo([
@@ -53,7 +63,13 @@ const PersonPage = ({ setErrorApi }) => {
             <div className={styles.wrapper}>
                 <span className={styles.person__name}>{personName}</span>
                 <div className={styles.container}>
-                    <PersonPhoto personPhoto={personPhoto} personName={personName} />
+                    <PersonPhoto
+                        personId={personId}
+                        personPhoto={personPhoto}
+                        personName={personName}
+                        isFavourite={isFavourite}
+                        setFavourite={setFavourite}
+                    />
                     {personInfo && <PersonInfo personInfo={personInfo} />}
                     {personFilms && (
                         <Suspense fallback={<UILoading />}>
