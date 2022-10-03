@@ -1,7 +1,7 @@
 import HomePage from '@containers/HomePage';
 import PeoplePage from '@containers/PeoplePage';
 import PersonPage from '@containers/PersonPage';
-import FavouritesPage from '@containers/FavouritesPage/FavouritesPage';
+import FavouritesPage from '@containers/FavouritesPage';
 import NotFoundPage from '@containers/NotFoundPage';
 
 import ErrorMessage from '@components/ErrorMessage';

@@ -4,6 +4,14 @@
     margin-bottom: var(--spacing-l);
 }
 
+.header__logo {
+    width: 60px;
+    height: 60px;
+    margin-right: var(--spacing-l);
+    object-fit: cover;
+    object-position: center center;
+}
+
 .header__nav {
     display: flex;
     flex-wrap: wrap;
