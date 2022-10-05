@@ -1,0 +1,5 @@
+.video {
+    display: block;
+    border-radius: var(--radius-m);
+    box-shadow: var(--box-shadow-white);
+}

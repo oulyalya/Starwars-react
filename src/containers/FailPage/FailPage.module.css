@@ -1,0 +1,5 @@
+.fail__video {
+    max-width: 100%;
+    width: 500px;
+    margin: var(--spacing-l) auto 0;
+}

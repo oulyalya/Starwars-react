@@ -40,7 +40,15 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink to="/people/?page=1" exact="false">People</NavLink>
-                        {/* <NavLink to={link} exact="false" onMouseDown={handleMouseEnter} onMouseLeave={handleMouseLeave}>People</NavLink> */}
+                    </li>
+                    <li>
+                        <NavLink to="/search" exact="false">Search</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/fail" exact="false">Fail</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/not-found" exact="false">404</NavLink>
                     </li>
                 </ul>
 
