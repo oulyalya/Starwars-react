@@ -1,14 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Header from '../../components/Header/Header';
+import Header from '@components/Header/Header';
 import routesConfig from '@routes/routesConfig';
 
 import styles from './App.module.css';
 
+import {REPO_NAME} from '@constants/repo';
+
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={`/${REPO_NAME}/`}>
       <div className={styles.wrapper}>
         <Header/>
 

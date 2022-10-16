@@ -40,5 +40,6 @@
 }
 
 .clear__disabled {
+    cursor: auto;
     opacity: 0.2;
 }
