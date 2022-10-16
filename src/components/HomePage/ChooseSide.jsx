@@ -32,19 +32,19 @@ const ChooseSide = () => {
         {
             theme: THEME_LIGHT,
             img: imgLight,
-            text: `I'm Light Side`,
+            text: `Light Side`,
             classes: styles.item__light,
         },
         {
             theme: THEME_DARK,
             img: imgDark,
-            text: `I'm Dark Side`,
+            text: `Dark Side`,
             classes: styles.item__dark,
         },
         {
             theme: THEME_NEUTRAL,
             img: imgNeutral,
-            text: `I'm Han Solo`,
+            text: `Han Solo`,
             classes: styles.item__neutral,
         },
     ]
